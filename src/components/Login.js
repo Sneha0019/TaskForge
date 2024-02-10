@@ -16,8 +16,16 @@ let navigate = useNavigate();
         body: JSON.stringify({email: credentials.email, password: credentials.password}),
       });
       const json = await response.json();
-      console.log(json);
+     
+
+
       if(json.success){
+      let name = json.username;
+    console.log(`name is ${name}`);
+    if (name) {
+      localStorage.setItem('username', name)
+      console.log(`set succesfully.. ${name}`);
+    }
         //----save the auth token and redirect
         localStorage.setItem("token", json.authToken)  //-->>saved in localstorage
         props.showAlert("loggged in successfully", "success");
@@ -30,11 +38,17 @@ let navigate = useNavigate();
   
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
+
   };
+
+  // useEffect(() => {
+  //   console.log(` use effect ${username}`); // This will log the updated value of username whenever it changes
+  // }, [username]); // Run this effect whenever username changes
+
 
 
   return (
-    <div className='mt-3'>
+    <div className='mt-3' style={{backgroundColor:'#0C2D57', padding:15, borderRadius: 20 }}>
       <h2>Login to Continue to iNotebook</h2>
       <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -52,3 +66,4 @@ let navigate = useNavigate();
 }
 
 export default Login
+

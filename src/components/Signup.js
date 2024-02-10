@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Signup = (props) => {
   const [credentials, setCredentials] = useState({name:"", email: "", password:"", cpassword:""});
-let navigate = useNavigate();
+  let navigate = useNavigate();
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
@@ -21,6 +21,7 @@ let navigate = useNavigate();
       if(json.success){
         //----save the auth token and redirect
         localStorage.setItem("token", json.authToken)  //-->>saved in localstorage
+        localStorage.setItem("username", json.username);
         navigate("/");
         props.showAlert("Account created successfully", "success");
       }else{
@@ -35,7 +36,7 @@ let navigate = useNavigate();
 
 
   return (
-    <div className='container mt-2 my-2'>
+    <div className='container mt-2 my-2' style={{backgroundColor: '#0C2D57', padding: 15, borderRadius:20}}>
       <h2>Create an account</h2>
       <form onSubmit={handleSubmit}>
       <div className="my-3">
@@ -45,7 +46,6 @@ let navigate = useNavigate();
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Email address</label>
     <input type="email" className="form-control" id="email" name="email" onChange={onChange} aria-describedby="emailHelp"/>
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div className="mb-3">
     <label htmlFor="password" className="form-label">Password</label>

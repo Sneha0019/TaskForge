@@ -7,6 +7,7 @@ import Alert from "./components/Alert";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import React, { useState } from "react";
+import ContactUs from "./components/ContactUs";
 
 
 import {
@@ -14,6 +15,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 
 
 
@@ -42,6 +44,7 @@ function App() {
         <Routes>
         <Route exact path="/" element={<Home showAlert={showAlert}/>} />
         <Route exact path="/about" element={<About/>} />
+        <Route exact path="/contact" element={<ContactUs showAlert={showAlert}/>} />
         <Route exact path="/login" element={<Login showAlert={showAlert}/>} />
         <Route exact path="/signup" element={<Signup showAlert={showAlert}/>} />
 

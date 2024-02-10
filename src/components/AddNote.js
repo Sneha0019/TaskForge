@@ -19,7 +19,7 @@ const AddNote = (props) => {
   };
 
   return (
-    <div className="container my-3">
+    <div style={{borderRadius: 20, border: 2, backgroundColor: '#0C2D57', padding: 8, paddingLeft: 12, paddingRight: 12}} className="container my-4 mb-6">
       <h2>Add a Note</h2>
       <form className="my-3">
         <div className="mb-3">

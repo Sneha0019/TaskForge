@@ -44,11 +44,11 @@ secPass = await bcrypt.hash(req.body.password, salt);
             id:user.id
         }
     }
-    console.log(data);
+    const username = user.name
     const authToken = jwt.sign(data, JWT_SECRET);
     console.log(authToken)
     success = true;
-    res.json({success, authToken});
+    res.json({success,username, authToken});
 }catch(error){
     console.error(error.message);
     res.status(500).send("some error occured");
@@ -94,9 +94,11 @@ router.post("/login",[
             }
         }
 
+        const username = user.name;
+
     const authToken = jwt.sign(payload, JWT_SECRET);
     success = true;
-    res.json({success, authToken});
+    res.json({success, username, authToken});
 
     }//----if any error occurs-----
     catch (error) {
@@ -113,7 +115,7 @@ router.post("/getuser", fetchuser, async (req, res)=>{
         let userId = req.user.id;
         const user = await User.findById(userId).select("-password");
         console.log(user);
-        res.send(user);
+        res.json({user});
         
     } catch (error) {
         console.error(error.message);
