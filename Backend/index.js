@@ -4,10 +4,19 @@ var cors = require('cors')
 
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT ||  5000;
 
- 
-app.use(cors())
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept, auth-token"
+    );
+    res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE"); 
+    res.header("Access-Control-Allow-Credentials", "true");
+    next();
+});
+
 app.use(express.json())
 //routing
 app.use("/api/auth", require("./routes/auth"))
