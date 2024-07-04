@@ -1,74 +1,36 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# TaskForge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Login
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/3885e043-3668-4005-bd20-9690bc3c0d72)
 
-## Available Scripts
+## SignUp
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/0d5d163b-9ecb-467e-b6c1-bd066994d744)
 
-In the project directory, you can run:
+## Home Page After Login
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/95ee6fe0-c13e-492b-bd85-433ff57c397b)
 
-### `npm start`
+## Adding data
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/5ff7d31b-5690-47f1-9f16-2ecc6de86a83)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/36dcdc29-5752-4a8b-b29f-26c320bc2527)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Updating data
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/4080da1f-bc16-4d0f-832b-577f09fb017d)
 
-### `npm test`
+## Deleting data
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/9ad1e4d4-7956-4d4f-b67b-65bf54629013)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ContactUs Page
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/ac5224be-7983-489f-8717-448393f2b71c)
 
-### `npm run build`
+## About Page
+![image](https://github.com/Sneha0019/TaskForge/assets/112338459/7ab28fcb-5529-4d42-8c0b-f93a338a165e)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# TASK_MANAGEMENT_SYSTEM-REACTAPP
->>>>>>> 077778878ba14f9b0750d8a36e86d528c53bcc59
