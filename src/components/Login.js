@@ -49,7 +49,7 @@ let navigate = useNavigate();
 
   return (
     <div className='mt-3' style={{backgroundColor:'#0C2D57', padding:15, borderRadius: 20 }}>
-      <h2>Login to Continue to iNotebook</h2>
+      <h2>Login to Continue to TaskForge</h2>
       <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address</label>
